@@ -1,4 +1,3 @@
-![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/e688b9e5-8939-4db3-ac66-2c6c3725d12d)# MISOPASCII-2023
 ## Generalidades 
 1. Las funcionalidades y escenarios de prueba fueron realizados en ```MACOS Sonoma 14.0```
 3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 5 funcionalidades y por cada funcionalidad 1 escenario de prueba para realizarlo tanto con KRAKEN como con CYPRESS y así de esta manera presentar 10 escenarios de pruebas E2E.
