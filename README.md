@@ -1,9 +1,15 @@
 # MISOPASCII-2023
 ## Generalidades 
 1. Las funcionalidades y escenarios de prueba fueron realizados en ```MACOS Sonoma 14.0```
-2. Tanto para GHOST, KRAKEN y CYPRESS se ha usado la version de ```NodeJS 18```
 3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 5 funcionalidades y por cada funcionalidad 1 escenario de prueba para realizarlo tanto con KRAKEN como con CYPRESS y así de esta manera presentar 10 escenarios de pruebas E2E.
 4. Los test realizados con KRAKEN se encuentran en ```e2e/kraken/features``` 
+
+## Instalacion de nvm para trajar con diferentes versiones de node
+1. ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash```
+2. Este comando te clonara la última versión estable de NVM en tu directorio ```~/.nvm```, luego intentara escribir en tu archivo ```~/.zshrc``` o ```~/.bashrc``` el código de abajo. Esto para que NVM se cargue y funcione correctamente al iniciar sesión en tu computadora.
+3. ```export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion```
 
 ## Despliegue de Ghost
 1. Clonar repositorio ```git clone https://github.com/juanca-uniandes/MISOPASCII-2023.git```
