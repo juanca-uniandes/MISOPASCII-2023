@@ -11,4 +11,10 @@
 4. ```npm install ghost-cli –g```
 5. ```ghost install local```
 6. Automáticamente, se instalará ghost y al finalizar la instalación mostrará por consola la URL en la cual está desplegado. ```http://localhost:YOUR_PORT```
-7. Ten presente esta URL porque la vamos a usar en pasos siguientes. 
+7. Ten presente esta URL porque la vamos a usar en pasos siguientes.
+
+## Despliegue de Kraken
+1. Instalar Android Studio Giraffe https://developer.android.com/studio
+2. Puedes verificar si las variables de entorno ADB han sido añadidas, de los contrarios deberás adicionarlas al .zshrc con los siguientes pasos: ```nano ~/.zshrc``` y adicionar ```export PATH=$PATH:/Users/YOUR_USER_NAME/Library/Android/sdk/platform-tools```. Una vez adicionado este path deberias ser capaz de ejecutar ```adb --versio```. El resultado en mi caso es el siguiente: ```Version 34.0.5-10900879
+Installed as /Users/juan/Library/Android/sdk/platform-tools/adb
+Running on Darwin 23.0.0 (arm64)```
