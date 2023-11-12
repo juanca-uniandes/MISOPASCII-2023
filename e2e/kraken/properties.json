@@ -1,5 +1,6 @@
 {
-  "URL": "http://localhost:2369/ghost/#/signin",
+  "MAIN_URL": "http://localhost:2369",
+  "LOGIN_URL": "http://localhost:2369/ghost/#/signin",
   "EMAIL": "test@test.com",
-  "PASSWORD": "mypassword2023"
+  "PASSWORD": "mytest2023"
 }
