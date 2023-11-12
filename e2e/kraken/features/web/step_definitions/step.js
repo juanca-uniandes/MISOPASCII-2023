@@ -6,7 +6,6 @@ const driver = new Builder().withCapabilities(capabilities).build();
 
 Given('I am on the subscription page', async function () {
   await driver.get(LOGIN_PAGE);
-  await sleep(1000);
 });
 
 When('I enter a correct email {email}', async function (email) {
@@ -14,9 +13,9 @@ When('I enter a correct email {email}', async function (email) {
     return await element.setValue(email);
 });
 
-When('I enter a correct password {email}', async function (email) {
+When('I enter a correct password {password}', async function (password) {
   let element = await this.driver.$(LOGIN_INPUT_PASSWORD);
-  return await element.setValue(email);
+  return await element.setValue(password);
 });
 
 When('I click on the signin button', async function () {

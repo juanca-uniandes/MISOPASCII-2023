@@ -6,3 +6,5 @@ node_modules
 ghost/*
 **/package-lock.json
 package-lock.json
+e2e/kraken/reports/*
+e2e/kraken/.kraken/*

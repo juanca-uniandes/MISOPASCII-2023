@@ -1,9 +1,7 @@
-LOGIN_PAGE = 'http://localhost:2368/ghost/#/signin'
+//NOTE: These are the selectors for the login page - Please don't change them
 LOGIN_INPUT_EMIAL = '.gh-input email'
 LOGIN_INPUT_PASSWORD = '.gh-input password'
 LOGIN_SIGNIN_BUTTON = '#ember5'
-EMAIL = 'test@test.com'
-PASSWORD = 'mypassword2023'
 
 module.exports = {
     LOGIN_PAGE,

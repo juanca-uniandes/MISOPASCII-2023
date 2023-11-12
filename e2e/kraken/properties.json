@@ -1,5 +1,5 @@
 {
-  "URL": "http://facebook.com",
-  "EMAIL": "echa.else@gmail.com",
-  "PASSWORD": "emerson2023"
+  "URL": "http://localhost:2369/ghost/#/signin",
+  "EMAIL": "test@test.com",
+  "PASSWORD": "mypassword2023"
 }
