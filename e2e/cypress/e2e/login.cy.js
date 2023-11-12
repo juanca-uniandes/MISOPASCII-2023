@@ -1,7 +1,6 @@
 import { Params } from '../params';
 const { LOGIN_URL, EMAIL, PASSWORD } = Params;
 const {LOGIN_INPUT_EMAIL, LOGIN_INPUT_PASSWORD, LOGIN_SIGNIN_BUTTON} = require('./globals/constants');
-console.log(LOGIN_INPUT_EMAIL)
 
 Cypress.Commands.add('hacerLoginCorrecto', () => {
     cy.visit(LOGIN_URL);
