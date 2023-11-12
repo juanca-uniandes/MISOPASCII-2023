@@ -31,3 +31,11 @@ Running on Darwin 23.0.0 (arm64)`
 4. Estando en la raíz del proyecto vamos a la siguiente carpeta `cd e2e/kraken`
 5. Ejecutamos `npm install` esto debería instalar las dependencias necesarias para ejecutar los test
 6. Ahora sí modificamos el `properties.json` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
+7. Finalmente ejecutamos el comando `./node_modules/kraken-node/bin/kraken-node run` y los test empezarán a ejecutarse.
+
+## Despliegue y ejecución de pruebas con Cypress
+1. Usando `nvm` vamos a instalar la versión de `node 20` por lo tanto debemos hacer `nvm install 20` y ` nvm use 20` esto instalará y usará la versión 20 de node en nuestro sistema y adicionará el path automáticamente a las variables de entorno. Si haces `node --version` verás la versión 20.x que se ha instalado.
+2. Desde la raíz del proyecto realizamos `cd e2e/cypress`
+3. Ejecutamos `npm install`
+4. Modificamos el siguiente archivo `nano e2e/cypress/params.js` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
+5. Y finalmente ejecutamos los test con `npm run cypress:run`
