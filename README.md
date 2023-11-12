@@ -7,8 +7,15 @@
 ## Instalacion de nvm para trajar con diferentes versiones de node
 1. ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash```
 2. Este comando te clonara la última versión estable de NVM en tu directorio ```~/.nvm```, luego intentara escribir en tu archivo ```~/.zshrc``` o ```~/.bashrc``` el código de abajo. Esto para que NVM se cargue y funcione correctamente al iniciar sesión en tu computadora.
-3. ``` export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # cargar NVM [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # cargar NVM bash_completion
-  ```
+3. ```bash
+
+Set up Node Version Manager (NVM)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+``` 
+
+
 ## Despliegue de Ghost
 1. Clonar repositorio ```git clone https://github.com/juanca-uniandes/MISOPASCII-2023.git```
 2. Crear en la raiz una carpeta de llamada ghost ```mkdir ghost```
