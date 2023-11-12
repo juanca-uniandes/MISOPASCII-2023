@@ -1,5 +1,5 @@
 {
-  "name": "kraken",
+  "name": "cypress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,6 @@
   "author": "Juan Camilo Vallejos Guerrero",
   "license": "ISC",
   "dependencies": {
-    "@cucumber/cucumber": "^7.2.1",
-    "chai": "^4.3.10",
-    "kraken-node": "^1.0.24"
+    "cypress": "^13.5.0"
   }
 }
