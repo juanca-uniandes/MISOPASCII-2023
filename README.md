@@ -22,4 +22,4 @@ Running on Darwin 23.0.0 (arm64)```
 3. Estando en la raiz del proyecto vamos a la siguiente carpeta ```e2e/kraken```
 4. Ejecutamos ```npm install``` esto deberia instalar las dependencias necesarias para ejecutar los test
 5. Ahora si modificamos el ```properties.json``` y en la variables ```MAIN_URL, LOGIN_URL, EMAIL, PASSWORD``` remplazalas por la URL que se genero en el paso 6 del despliegue de Ghost y el email y password seran los que creaste en el paso 7 del depliegue de Ghost
-6. Finalmente ejecutamos el comando ```./node_modules/kraken-node/bin/kraken-node run``` y los test empezaran a correr.
+6. Finalmente ejecutamos el comando ```./node_modules/kraken-node/bin/kraken-node run``` y los test empezaran a ejecutarse.
