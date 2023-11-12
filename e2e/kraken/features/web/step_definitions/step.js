@@ -111,5 +111,44 @@ Then('I confirm that post was created', async function () {
 });
 
 // Create page
+When('I select the "Pages" section', async function () {
+  let element = await this.driver.$(PAGES_SECTION);
+  return await element.click();
+});
 
+When('I select the "Create New Page" option', async function () {
+  let element = await this.driver.$(CREATE_NEW_PAGE_OPTION);
+  return await element.click();
+});
+
+When('I type the page title {string}', async function (title) {
+  let element = await this.driver.$(PAGE_TITLE_TEXTAREA);
+  return await element.setValue(title);
+});
+
+When('I click on the body text of page', async function () {
+  let element = await this.driver.$(BODY_TEXT);
+  return await element.click();
+});
+
+When('I click on the "Publish Page" option', async function () {
+  let element = await this.driver.$(PUBLISH_OPTION);
+  return await element.click();
+});
+
+When('I click on "Finish Review Page"', async function () {
+  let element = await this.driver.$(FINISH_REVIEW_BUTTON);
+  return await element.click();
+});
+
+When('I click on the "Publish Page Now" button', async function () {
+  let element = await this.driver.$(PUBLISH_PAGE_NOW_BUTTON);
+  return await element.click();
+});
+
+Then('I confirm that the page was created', async function () {
+  let element = await this.driver.$(CONFIRMATION_ELEMENT);
+  let actualText = await element.getText();
+  expect(actualText.trim()).to.include(TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED);
+});
 // Create Tags
