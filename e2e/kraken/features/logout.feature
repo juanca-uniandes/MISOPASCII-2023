@@ -1,4 +1,4 @@
-Feature: User Can Logout
+Feature: Logout
 
 @user1 @web 
 Scenario: User can logout

@@ -1,4 +1,4 @@
-Feature: User Can Create Page
+Feature: Create Page
 
 @user1 @web 
 Scenario: User can create page

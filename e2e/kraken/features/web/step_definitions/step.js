@@ -23,7 +23,13 @@ const {
   PUBLISH_OPTION,
   FINISH_REVIEW_BUTTON,
   PUBLISH_PAGE_NOW_BUTTON,
-  CONFIRMATION_ELEMENT
+  CONFIRMATION_ELEMENT,
+  CREATE_TAGS_SECTION,
+  CREATE_NEW_TAG_OPTION,
+  TAG_NAME_INPUT,
+  TAG_DESCRIPTION_TEXTAREA,
+  SAVE_TAG_BUTTON,
+  DELETE_TAG_BUTTON
   } = require('./constants');
 const { expect } = require('chai');
 
@@ -151,4 +157,39 @@ Then('I confirm that the page was created', async function () {
   let actualText = await element.getText();
   expect(actualText.trim()).to.include(TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED);
 });
-// Create Tags
+
+// Create tag
+
+When('I select the "Create Tags" section', async function () {
+  let element = await this.driver.$(CREATE_TAGS_SECTION);
+  return await element.click();
+});
+
+When('I select the "Create New Tag" option', async function () {
+  let element = await this.driver.$(CREATE_NEW_TAG_OPTION);
+  return await element.click();
+});
+
+When('I type the tag name {string}', async function (tagName) {
+  let element = await this.driver.$(TAG_NAME_INPUT);
+  return await element.setValue(tagName);
+});
+
+When('I enter a description for the tag {string}', async function (description) {
+  let element = await this.driver.$(TAG_DESCRIPTION_TEXTAREA);
+  return await element.setValue(description);
+});
+
+When('I click on the "Save Tag" button', async function () {
+  let element = await this.driver.$(SAVE_TAG_BUTTON);
+  return await element.click();
+});
+
+Then('I confirm that the tag was created', async function () {
+  const confirmationButton = await this.driver.$(DELETE_TAG_BUTTON);
+  expect(await confirmationButton.isDisplayed()).to.be.true;
+});
+
+
+
+

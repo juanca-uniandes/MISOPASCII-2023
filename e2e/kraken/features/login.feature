@@ -1,4 +1,4 @@
-Feature: User Can Make Login
+Feature: Login
 
 @user1 @web 
 Scenario: User can login with correct credentials

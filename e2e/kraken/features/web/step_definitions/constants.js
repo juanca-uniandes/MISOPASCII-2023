@@ -25,6 +25,13 @@ FINISH_REVIEW_BUTTON= '/html/body/div[4]/div/div/div/div[3]/button',
 PUBLISH_PAGE_NOW_BUTTON= '/html/body/div[4]/div/div/div/div[2]/button[1]',
 CONFIRMATION_ELEMENT= '/html/body/div[4]/div/div/div/div',
 
+CREATE_TAGS_SECTION = '/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[3]/a';
+CREATE_NEW_TAG_OPTION = '/html/body/div[2]/div/main/section/div/header/section/a';
+TAG_NAME_INPUT = '/html/body/div[2]/div/main/section/form/div[2]/section/div/div[1]/div[1]/div[1]/input';
+TAG_DESCRIPTION_TEXTAREA = '/html/body/div[2]/div/main/section/form/div[2]/section/div/div[1]/div[3]/textarea';
+SAVE_TAG_BUTTON = '/html/body/div[2]/div/main/section/form/div[1]/header/section/button';
+DELETE_TAG_BUTTON = '/html/body/div[2]/div/main/section/div/button'
+
 
 module.exports = {
     LOGIN_INPUT_EMAIL,
@@ -51,6 +58,13 @@ module.exports = {
     FINISH_REVIEW_BUTTON,
     PUBLISH_PAGE_NOW_BUTTON,
     CONFIRMATION_ELEMENT,
+    
+    CREATE_TAGS_SECTION,
+    CREATE_NEW_TAG_OPTION,
+    TAG_NAME_INPUT,
+    TAG_DESCRIPTION_TEXTAREA,
+    SAVE_TAG_BUTTON,
+    DELETE_TAG_BUTTON
 }
 
 
