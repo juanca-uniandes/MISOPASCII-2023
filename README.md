@@ -1,7 +1,9 @@
 ## Generalidades 
 1. Las funcionalidades y escenarios de prueba fueron realizados en `macOS Sonoma 14.0`.
 3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 5 funcionalidades y por cada funcionalidad 1 escenario de prueba para realizarlo tanto con KRAKEN como con CYPRESS y así de esta manera presentar 10 escenarios de pruebas E2E.
-4. Los test realizados con KRAKEN se encuentran en `e2e/kraken/features`. 
+4. Los test realizados con KRAKEN se encuentran en ```e2e/kraken/features```.
+5. Los test realizados con CYPRESS se encuentran en ```e2e/cypress/e2e```
+6. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar, si se superan te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```
 
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
@@ -32,6 +34,8 @@ Running on Darwin 23.0.0 (arm64)`
 5. Ejecutamos `npm install` esto debería instalar las dependencias necesarias para ejecutar los test
 6. Ahora sí modificamos el `properties.json` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
 7. Finalmente ejecutamos el comando `./node_modules/kraken-node/bin/kraken-node run` y los test empezarán a ejecutarse.
+8. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/9c146531-5635-4656-9b17-0fad3a96ed76)
+
 
 ## Despliegue y ejecución de pruebas con Cypress
 1. Usando `nvm` vamos a instalar la versión de `node 20` por lo tanto debemos hacer `nvm install 20` y ` nvm use 20` esto instalará y usará la versión 20 de node en nuestro sistema y adicionará el path automáticamente a las variables de entorno. Si haces `node --version` verás la versión 20.x que se ha instalado.
@@ -39,3 +43,5 @@ Running on Darwin 23.0.0 (arm64)`
 3. Ejecutamos `npm install`
 4. Modificamos el siguiente archivo `nano e2e/cypress/params.js` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
 5. Y finalmente ejecutamos los test con `npm run cypress:run`
+6. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/1df9f142-1aed-4408-a6fa-2750ecb0bcb3)
+
