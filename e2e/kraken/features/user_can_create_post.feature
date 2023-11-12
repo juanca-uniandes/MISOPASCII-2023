@@ -1,7 +1,7 @@
 Feature: User Can Create Post
 
 @user1 @web 
-Scenario: User can login and create a post
+Scenario: User can create a post
   Given I navigate to page "<LOGIN_URL>"
   And I wait for 5 seconds
   When I enter a correct email "<EMAIL>"
@@ -18,6 +18,8 @@ Scenario: User can login and create a post
   And I wait for 2 seconds
   When I type the post title "New Post Title"
   And I wait for 2 seconds
+  When I click on the body text
+  And I wait for 2 seconds
   When I click on the "Publish" option
   And I wait for 2 seconds
   When I click on "Finish Review"
@@ -25,7 +27,6 @@ Scenario: User can login and create a post
   When I click on the "Publish Post Now" button
   And I wait for 5 seconds
   Then I confirm that post was created
-  And I wait for 2 seconds
 
 
 

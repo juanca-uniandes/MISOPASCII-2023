@@ -6,7 +6,24 @@ const {
   ADMIN_DASHBOARD_TITLE,
   USER_PROFILE_DROPDOWN,
   LOGOUT_LINK,
-  DASHBOARD_URL
+  DASHBOARD_URL,
+  BUTTON_SEE_MOST_POST,
+  BUTTON_CREATE_NEW_POST,
+  INPUT_POST_TITLE,
+  INPUT_BODY_TEXT,
+  BUTTON_PUSBLISH_POST,
+  BUTTON_FINISH_POST_REVIEW,
+  BUTTON_PUBLISH_POST_NOW,
+  TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED,
+  DIV_TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED,
+  PAGES_SECTION,
+  CREATE_NEW_PAGE_OPTION,
+  PAGE_TITLE_TEXTAREA,
+  BODY_TEXT,
+  PUBLISH_OPTION,
+  FINISH_REVIEW_BUTTON,
+  PUBLISH_PAGE_NOW_BUTTON,
+  CONFIRMATION_ELEMENT
   } = require('./constants');
 const { expect } = require('chai');
 
@@ -51,47 +68,47 @@ Then('I can not get access to the dashboard', async function () {
 
 // Create post
 
-const { Given, When, Then } = require('@cucumber/cucumber');
-const { expect } = require('chai');
-
-// Assuming you already have 'this.driver' configured with your WebDriver instance
-
 When('I select the "See Most Posts" section', async function () {
-  let element = await this.driver.$('/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[1]/a[1]');
+  let element = await this.driver.$(BUTTON_SEE_MOST_POST);
   return await element.click();
 });
 
 When('I select the "Create New Post" options', async function () {
-  let element = await this.driver.$('/html/body/div[2]/div/main/section/div/header/section/div[2]/a');
+  let element = await this.driver.$(BUTTON_CREATE_NEW_POST);
   return await element.click();
 });
 
 When('I type the post title {string}', async function (title) {
-  let element = await this.driver.$('/html/body/div[2]/div/main/div[1]/section/div[1]/div[1]/div[2]/textarea');
+  let element = await this.driver.$(INPUT_POST_TITLE);
   return await element.setValue(title);
 });
 
+
+When('I click on the body text', async function () {
+  let element = await this.driver.$(INPUT_BODY_TEXT);
+  return await element.click();
+});
+
 When('I click on the "Publish" option', async function () {
-  let element = await this.driver.$('/html/body/div[2]/div/main/div[1]/section/header/section/button[2]');
+  let element = await this.driver.$(BUTTON_PUSBLISH_POST);
   return await element.click();
 });
 
 When('I click on "Finish Review"', async function () {
-  let element = await this.driver.$('//*[@id="ember101"]/div/div/div[3]/button');
+  let element = await this.driver.$(BUTTON_FINISH_POST_REVIEW);
   return await element.click();
 });
 
 When('I click on the "Publish Post Now" button', async function () {
-  let element = await this.driver.$('/html/body/div[4]/div/div/div/div[2]/button[1]');
+  let element = await this.driver.$(BUTTON_PUBLISH_POST_NOW);
   return await element.click();
 });
 
 Then('I confirm that post was created', async function () {
-  let element = await this.driver.$('/html/body/div[4]/div/div/div/div');
+  let element = await this.driver.$(DIV_TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED);
   let actualText = await element.getText();
-  expect(actualText.trim()).to.equal('Boom. It’s out there. That’s 3 posts published, keep going!');
+  expect(actualText.trim()).to.include(TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED);
 });
-
 
 // Create page
 
