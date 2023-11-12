@@ -3,7 +3,7 @@
 1. Las funcionalidades y escenarios de prueba fueron realizados en ```MACOS Sonoma 14.0```
 2. Tanto para GHOST, KRAKEN y CYPRESS se ha usado la version de ```NodeJS 18```
 3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos, por ende, he escogido 5 funcionalidades y por cada funcionalidad 1 escenario de prueba para realizarlo tanto con KRAKEN como con CYPRESS y así de esta manera presentar 10 escenarios de pruebas E2E.
-4. Los test realizados con KRAKEN se encuentran en ```e2e/kraken/features``` 
+4. Los test realizados con KRAKEN se encuentran en ``` cd e2e/kraken/features``` 
 
 ## Despliegue de Ghost
 1. Clonar repositorio ```git clone https://github.com/juanca-uniandes/MISOPASCII-2023.git```
