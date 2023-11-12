@@ -18,6 +18,6 @@
 2. Puedes verificar si las variables de entorno ADB han sido añadidas, de los contrarios deberás adicionarlas al .zshrc con los siguientes pasos: ```nano ~/.zshrc``` y adicionar ```export PATH=$PATH:/Users/YOUR_USER_NAME/Library/Android/sdk/platform-tools```. Una vez adicionado este path deberias ser capaz de ejecutar ```adb --versio```. El resultado en mi caso es el siguiente: ```Version 34.0.5-10900879
 Installed as /Users/juan/Library/Android/sdk/platform-tools/adb
 Running on Darwin 23.0.0 (arm64)```
-3. estando en la raiz del proyecto vamos a la siguiente carpeta ```e2e/kraken```
-4. ```npm install```
-5. 
+3. Estando en la raiz del proyecto vamos a la siguiente carpeta ```e2e/kraken```
+4. Ejecutamos ```npm install``` esto deberia instalar las dependencias necesarias para ejecutar los test
+5. Finalmente ejecutamos el comando ```./node_modules/kraken-node/bin/kraken-node run```
