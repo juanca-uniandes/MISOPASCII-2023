@@ -10,5 +10,5 @@
 3. ```cd ghost```
 4. ```npm install ghost-cli –g```
 5. ```ghost install local```
-6. Automáticamente, se instalará ghost y al finalizar la instalación mostrará por consola la URL en la cual está desplegado. [http://localhost:YOUR_PORT]
+6. Automáticamente, se instalará ghost y al finalizar la instalación mostrará por consola la URL en la cual está desplegado. ```http://localhost:YOUR_PORT```
 7. Ten presente esta URL porque la vamos a usar en pasos siguientes. 
