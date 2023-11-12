@@ -1,7 +1,7 @@
 Feature: Create Page
 
 @user1 @web 
-Scenario: User can create page
+Scenario: User can create page successfully
   Given I navigate to page "<LOGIN_URL>"
   And I wait for 5 seconds
   When I enter a correct email "<EMAIL>"

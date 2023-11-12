@@ -1,7 +1,7 @@
 Feature: Create Tag
 
 @user1 @web 
-Scenario: User can create tag
+Scenario: User can create tag successfully
   Given I navigate to page "<LOGIN_URL>"
   And I wait for 5 seconds
   When I enter a correct email "<EMAIL>"

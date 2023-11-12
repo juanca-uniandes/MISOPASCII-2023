@@ -1,7 +1,7 @@
 Feature: Logout
 
 @user1 @web 
-Scenario: User can logout
+Scenario: User can logout successfully
   Given I navigate to page "<LOGIN_URL>"
   And I wait for 5 seconds
   When I enter a correct email "<EMAIL>"
