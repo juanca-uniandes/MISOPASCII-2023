@@ -1,4 +1,4 @@
-# MISOPASCII-2023
+![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/e688b9e5-8939-4db3-ac66-2c6c3725d12d)# MISOPASCII-2023
 ## Generalidades 
 1. Las funcionalidades y escenarios de prueba fueron realizados en ```MACOS Sonoma 14.0```
 3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 5 funcionalidades y por cada funcionalidad 1 escenario de prueba para realizarlo tanto con KRAKEN como con CYPRESS y así de esta manera presentar 10 escenarios de pruebas E2E.
@@ -8,6 +8,10 @@
 1. ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash```
 2. Este comando te clonara la última versión estable de NVM en tu directorio ```~/.nvm```, luego intentara escribir en tu archivo ```~/.zshrc``` o ```~/.bashrc``` el código de abajo. Esto para que NVM se cargue y funcione correctamente al iniciar sesión en tu computadora.
 3. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/df39c553-55e5-4db6-b691-7d2df5a9d769)
+4. Realizamos un source ```source ~/.zshrc```
+5. Y si ejecutamos ```nvm --version``` deberiamos recibir una respuesta como esta
+![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/72b8d885-19ab-48dc-9ddc-b5ac1e8be9ea)
+
 
 
 ## Despliegue de Ghost
