@@ -22,7 +22,7 @@
 8. Ingresa en la URL y deberias ver un formulario para nombrar a tu proyecto local de ghost, y crear un usuario con correo y contraseña para poder acceder al dashboard. Ten presente este usuario y contraseña porque lo usuremos en pasos posteriores. ```[YOUR_EMAIL, YOUR_PASSWORD]```
 9. Ten presente la URL generada en el paso 6 porque la vamos a usar en pasos posteriores.
 
-## Despliegue de Kraken
+## Despliegue y ejecucion de pruebas con Kraken
 1. Usando ```nvm``` vamos a instalar la version de ```node 20``` por lo tanto debemos hacer ```nvm install 20``` y ``` nvm use 20``` esto instalara y usara la version 20 de node en nuestro sistema y adicionara el path automaticamente a las variables de entorno. Si haces ```node --version``` Veras la version 20.x que se ha instalado. 
 2. Instalar Android Studio Giraffe https://developer.android.com/studio
 3. Puedes verificar si las variables de entorno ADB han sido añadidas, de los contrarios deberás adicionarlas al .zshrc con los siguientes pasos: ```nano ~/.zshrc``` y adicionar ```export PATH=$PATH:/Users/YOUR_USER_NAME/Library/Android/sdk/platform-tools```. Una vez adicionado este path deberias ser capaz de ejecutar ```adb --versio```. El resultado en mi caso es el siguiente: ```Version 34.0.5-10900879
@@ -32,3 +32,10 @@ Running on Darwin 23.0.0 (arm64)```
 5. Ejecutamos ```npm install``` esto deberia instalar las dependencias necesarias para ejecutar los test
 6. Ahora si modificamos el ```properties.json``` y en la variables ```MAIN_URL, LOGIN_URL, EMAIL, PASSWORD``` remplazalas por la URL que se genero en el paso 6 del despliegue de Ghost y el email y password seran los que creaste en el paso 7 del depliegue de Ghost
 7. Finalmente ejecutamos el comando ```./node_modules/kraken-node/bin/kraken-node run``` y los test empezaran a ejecutarse.
+
+## Despliegue y ejecucion de pruebas con Cypress
+1. Usando ```nvm``` vamos a instalar la version de ```node 20``` por lo tanto debemos hacer ```nvm install 20``` y ``` nvm use 20``` esto instalara y usara la version 20 de node en nuestro sistema y adicionara el path automaticamente a las variables de entorno. Si haces ```node --version``` Veras la version 20.x que se ha instalado.
+2. Desde la raiz del proyecto realizamos ```cd e2e/cypress```
+3. Ejecutamos ```npm install```
+4. Modificamos el siguiene archivo ```nano e2e/cypress/params.js``` y en la variables ```MAIN_URL, LOGIN_URL, EMAIL, PASSWORD``` remplazalas por la URL que se genero en el paso 6 del despliegue de Ghost y el email y password seran los que creaste en el paso 7 del depliegue de Ghost
+5. Y finalmente ejecutamos los test con ```npm run cypress:run```
