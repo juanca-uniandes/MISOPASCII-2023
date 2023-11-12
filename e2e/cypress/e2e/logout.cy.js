@@ -1,6 +1,6 @@
 import './login.cy';
 require('@cypress/xpath');
-const {USER_PROFILE_DROPDOWN, LOGOUT_LINK} = require('./globals/constants');
+const {USER_PROFILE_DROPDOWN, LOGOUT_LINK, DASHBOARD_URL} = require('./globals/constants');
 
 
 
@@ -17,6 +17,7 @@ describe('Como usuario quiero poder cerrar la sesión', () => {
 
         cy.hacerLogout();
         cy.screenshot(`logout_exitoso`);
+        cy.url().should('not.include', DASHBOARD_URL);
     });
 
 });
