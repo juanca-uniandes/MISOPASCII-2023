@@ -19,7 +19,7 @@
 3. Crear en la raíz una carpeta llamada ghost `mkdir ghost`
 4. `cd ghost`
 5. `npm install ghost-cli –g`
-6. `ghost install local`
+6. `ghost install 5.72.2 --local`
 7. Automáticamente, se instalará Ghost y al finalizar la instalación mostrará por consola la URL en la cual está desplegado. `http://localhost:YOUR_PORT`
 8. Ingresa en la URL y deberías ver un formulario para nombrar a tu proyecto local de Ghost, y crear un usuario con correo y contraseña para poder acceder al dashboard. Ten presente este usuario y contraseña porque lo usaremos en pasos posteriores. `[YOUR_EMAIL, YOUR_PASSWORD]`
 9. Ten presente la URL generada en el paso 6 porque la vamos a usar en pasos posteriores.
