@@ -2,8 +2,8 @@ node_modules
 **/node_modules/
 **/node_modules
 node_modules/
-node_modules
-ghost/*
+ghost3.42/*
+ghost5.72.2/*
 **/package-lock.json
 package-lock.json
 e2e/kraken/reports/*
