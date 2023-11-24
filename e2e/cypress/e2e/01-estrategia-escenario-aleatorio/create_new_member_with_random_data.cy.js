@@ -1,5 +1,5 @@
 import {faker} from '@faker-js/faker';
-import './login_with_correct_credentials.cy';
+import '../login_with_correct_credentials.cy';
 require('@cypress/xpath');
 describe('Como usuario quiero crear un mimebro con informacion aleatoria correcta', () => {
 

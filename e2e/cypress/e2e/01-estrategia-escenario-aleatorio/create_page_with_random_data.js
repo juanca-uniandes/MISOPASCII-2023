@@ -1,6 +1,6 @@
-import './login_with_correct_credentials.cy';
+import '../login_with_correct_credentials.cy';
 require('@cypress/xpath');
-import { CREATE_NEW_PAGE_OPTION, PAGES_SECTION,  PAGE_TITLE_TEXTAREA, BODY_TEXT, PUBLISH_OPTION, FINISH_REVIEW_BUTTON, PUBLISH_PAGE_NOW_BUTTON, CONFIRMATION_ELEMENT } from './globals/constants';
+import { CREATE_NEW_PAGE_OPTION, PAGES_SECTION,  PAGE_TITLE_TEXTAREA, BODY_TEXT, PUBLISH_OPTION, FINISH_REVIEW_BUTTON, PUBLISH_PAGE_NOW_BUTTON, CONFIRMATION_ELEMENT } from '../globals/constants';
 const { faker } = require('@faker-js/faker');
 Cypress.Commands.add('crearPagina', () => {
   cy.hacerLoginCorrecto();

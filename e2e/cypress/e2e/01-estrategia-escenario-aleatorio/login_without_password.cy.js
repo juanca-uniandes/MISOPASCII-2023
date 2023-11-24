@@ -1,6 +1,6 @@
-import { Params } from '../params';
+import { Params } from '../../params';
 const { LOGIN_URL, EMAIL, PASSWORD } = Params;
-const {LOGIN_INPUT_EMAIL, LOGIN_INPUT_PASSWORD, LOGIN_SIGNIN_BUTTON, ADMIN_DASHBOARD_TITLE} = require('./globals/constants');
+const {LOGIN_INPUT_EMAIL, LOGIN_INPUT_PASSWORD, LOGIN_SIGNIN_BUTTON, ADMIN_DASHBOARD_TITLE} = require('../globals/constants');
 const { faker } = require('@faker-js/faker');
 require('@cypress/xpath');
 describe('Como usuario quiero no poder ingresar al sistema sin ingresar la contrasena', () => {
