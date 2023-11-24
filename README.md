@@ -33,3 +33,9 @@
 5. Y finalmente ejecutamos los test con `npm run cypress:run`
 6. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/1df9f142-1aed-4408-a6fa-2750ecb0bcb3)
 
+## Estrategias de pruebas
+### Estrategia escenario aleatorio.
+Para la generación aleatoria de datos en 15 archivos diferentes, se utilizó la herramienta Faker, importando la biblioteca en cada uno de los archivos que implementan los 40 casos de prueba mencionados. Según las entradas del escenario de prueba a validar, se emplearon los métodos proporcionados por la biblioteca Faker, tales como word, words, lorem, internet, etc.
+
+
+
