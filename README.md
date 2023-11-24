@@ -35,7 +35,7 @@
 
 ## Estrategias de pruebas
 ### Estrategia escenario aleatorio.
-Para la generación aleatoria de datos en 15 archivos diferentes, se utilizó la herramienta Faker, importando la biblioteca en cada uno de los archivos que implementan los 40 casos de prueba mencionados. Según las entradas del escenario de prueba a validar, se emplearon los métodos proporcionados por la biblioteca Faker, tales como word, words, lorem, internet, etc.
+Para la generación aleatoria de datos, se utilizó la herramienta Faker, importando la biblioteca en cada uno de los archivos que implementan los 15 casos de prueba mencionados. Según las entradas del escenario de prueba a validar, se emplearon los métodos proporcionados por la biblioteca Faker, tales como word, words, lorem, internet, etc.
 
 
 
