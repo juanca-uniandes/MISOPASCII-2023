@@ -1,11 +1,12 @@
 ## Generalidades 
 1. Las funcionalidades y escenarios de prueba fueron realizados en `macOS Sonoma 14.0`.
-3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 30 pruebas.
-5. Solo se uso CYPRESS y los test se encuentran en ```e2e/cypress/e2e```.
-6. Los test de estrategia aleatoria están ```e2e/cypress/e2e/01-estrategia-escenario-aleatorio```
-7. Los test de estrategia estrategia pool de datos a priori ```e2e/cypress/e2e/02-estrategia-pool-de-datos-a-priori```
-8. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
-9. Para el registro de incidencias revisar los issues que inician con SEMANA VI
+2. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 30 pruebas.
+3. Solo se uso CYPRESS y los test se encuentran en ```e2e/cypress/e2e```.
+4. Los test de estrategia aleatoria están ```e2e/cypress/e2e/01-estrategia-escenario-aleatorio```
+5. Los test de estrategia estrategia pool de datos a priori estan ```e2e/cypress/e2e/02-estrategia-pool-de-datos-a-priori```
+6. Los test de estrategia de pool de datos pseudo aleatorio estan ```e2e/cypress/e2e/03-estrategia-pool-de-datos-pseudo-aleatorio```
+7. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
+8. Para el registro de incidencias revisar los issues que inician con SEMANA VI
 
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
