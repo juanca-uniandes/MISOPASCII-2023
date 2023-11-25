@@ -43,3 +43,10 @@ Para la generación aleatoria de datos, se utilizó la herramienta Faker, import
 ### Estrategia pool de datos a-priori
 Para la generación previa de datos, se utilizó la herramienta Mockaroo estableciendo un template de data general llamado MOCK_DATA.json con 1000 registros y este fue ubicado dentro del proyecto cypress. En cada caso de pruebas implementado, se importó el mencionado archivo haciedo uso aletario de los registros allí encontrados.
 
+### Estrategia pool de datos (pseudo) aleatorio dinámico
+Para la generación pseudoaleatoria de datos, se empleó el generador de datos Mockaroo a través de una interfaz tipo API. En este proceso, se creó una cuenta en Mockaroo y se diseñó un esquema denominado 'Data'. Este esquema está definido por un objeto que incluye las propiedades 'first_name', 'second_name', 'short_text', 'long_text', y sus valores son generados de forma automática.
+
+Esta URL se utiliza en cada caso de prueba cypres, al obtener el response del api su body lo guardo en un objeto y luego lo uso para llenar los campos de la interfaz.
+
+
+
