@@ -39,6 +39,6 @@
 ### Estrategia escenario aleatorio.
 Para la generación aleatoria de datos, se utilizó la herramienta Faker, importando la biblioteca en cada uno de los archivos que implementan los 15 casos de prueba mencionados. Según las entradas del escenario de prueba a validar, se emplearon los métodos proporcionados por la biblioteca Faker, tales como word, words, lorem, internet, etc.
 
-## Estrategia pool de datos a-priori
+### Estrategia pool de datos a-priori
 Para la generación previa de datos, se utilizó la herramienta Mockaroo estableciendo un template de data general llamado MOCK_DATA.json con 1000 registros y este fue ubicado dentro del proyecto cypress. En cada caso de pruebas implementado, se importó el mencionado archivo haciedo uso aletario de los registros allí encontrados.
 
