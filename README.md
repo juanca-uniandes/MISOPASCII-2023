@@ -6,7 +6,7 @@
 5. Los test de estrategia estrategia pool de datos a priori estan ```e2e/cypress/e2e/02-estrategia-pool-de-datos-a-priori```
 6. Los test de estrategia de pool de datos pseudo aleatorio estan ```e2e/cypress/e2e/03-estrategia-pool-de-datos-pseudo-aleatorio```
 7. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
-8. Para el registro de incidencias revisar los issues que inician con SEMANA VI
+8. Para el registro de incidencias revisar los issues que inician con SEMANA VI - Solo pude localizar 7 incidencias. debido a que trabaje solo con 30 pruebas.
 
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
