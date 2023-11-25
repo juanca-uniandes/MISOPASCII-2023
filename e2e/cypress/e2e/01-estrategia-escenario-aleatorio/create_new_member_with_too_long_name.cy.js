@@ -1,5 +1,5 @@
 import {faker} from '@faker-js/faker';
-import '../../e2e/login_with_correct_credentials.cy';
+import '../login_with_correct_credentials.cy';
 require('@cypress/xpath');
 describe('Como usuario quiero verificar si puedo crear un miembro con un nombre muy largo', () => {
 

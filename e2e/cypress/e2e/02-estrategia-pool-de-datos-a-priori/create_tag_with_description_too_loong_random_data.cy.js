@@ -1,6 +1,6 @@
-import '../../e2e/login_with_correct_credentials.cy';
+import '../login_with_correct_credentials.cy';
 require('@cypress/xpath');
-const { CREATE_TAGS_SECTION, CREATE_NEW_TAG_OPTION, TAG_NAME_INPUT, TAG_DESCRIPTION_TEXTAREA, SAVE_TAG_BUTTON, DELETE_TAG_BUTTON } = require('../../e2e/globals/constants');
+const { CREATE_TAGS_SECTION, CREATE_NEW_TAG_OPTION, TAG_NAME_INPUT, TAG_DESCRIPTION_TEXTAREA, SAVE_TAG_BUTTON, DELETE_TAG_BUTTON } = require('../globals/constants');
 
 Cypress.Commands.add('crearTag', (title, longDescription) => {
     cy.hacerLoginCorrecto();

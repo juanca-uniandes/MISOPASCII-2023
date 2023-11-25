@@ -1,4 +1,4 @@
-import '../../e2e/login_with_correct_credentials.cy';
+import '../login_with_correct_credentials.cy';
 require('@cypress/xpath');
 import {
     CREATE_NEW_PAGE_OPTION,
@@ -10,7 +10,7 @@ import {
     PUBLISH_PAGE_NOW_BUTTON,
     CONFIRMATION_ELEMENT,
     BUTTON_PUSBLISH_POST
-} from '../../e2e/globals/constants';
+} from '../globals/constants';
 
 Cypress.Commands.add('crearPagina', (longTitle) => {
     cy.hacerLoginCorrecto();

@@ -1,6 +1,6 @@
-import '../../e2e/login_with_correct_credentials.cy';
+import '../login_with_correct_credentials.cy';
 require('@cypress/xpath');
-const { BUTTON_SEE_MOST_POST, BUTTON_CREATE_NEW_POST, INPUT_POST_TITLE, BODY_TEXT, BUTTON_PUSBLISH_POST, BUTTON_FINISH_POST_REVIEW, BUTTON_PUBLISH_POST_NOW, DIV_TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED } = require('../../e2e/globals/constants');
+const { BUTTON_SEE_MOST_POST, BUTTON_CREATE_NEW_POST, INPUT_POST_TITLE, BODY_TEXT, BUTTON_PUSBLISH_POST, BUTTON_FINISH_POST_REVIEW, BUTTON_PUBLISH_POST_NOW, DIV_TEXT_WHEN_POST_PAGE_TAG_ARE_CREATED } = require('../globals/constants');
 const { faker } = require('@faker-js/faker');
 
 Cypress.Commands.add('crearPublicacion', () => {
