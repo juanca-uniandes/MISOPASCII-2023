@@ -3,8 +3,9 @@
 3. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 30 pruebas.
 5. Solo se uso CYPRESS y los test se encuentran en ```e2e/cypress/e2e```.
 6. Los test de estrategia aleatoria están ```e2e/cypress/e2e/01-estrategia-escenario-aleatorio```
-7. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
-8. Para el registro de incidencias revisar los issues que inician con SEMANA VI
+7. Los test de estrategia estrategia pool de datos a priori ```e2e/cypress/e2e/02-estrategia-pool-de-datos-a-priori```
+8. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
+9. Para el registro de incidencias revisar los issues que inician con SEMANA VI
 
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
@@ -38,5 +39,6 @@
 ### Estrategia escenario aleatorio.
 Para la generación aleatoria de datos, se utilizó la herramienta Faker, importando la biblioteca en cada uno de los archivos que implementan los 15 casos de prueba mencionados. Según las entradas del escenario de prueba a validar, se emplearon los métodos proporcionados por la biblioteca Faker, tales como word, words, lorem, internet, etc.
 
-
+## Estrategia pool de datos a-priori
+Para la generación previa de datos, se utilizó la herramienta Mockaroo estableciendo un template de data general llamado MOCK_DATA.json con 1000 registros y este fue ubicado dentro del proyecto cypress. En cada caso de pruebas implementado, se importó el mencionado archivo haciedo uso aletario de los registros allí encontrados.
 
