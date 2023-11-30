@@ -4,6 +4,6 @@ module.exports = {
         // implement node event listeners here
         },
         supportFile: false,
-        specPattern: 'monkeys/**/*.js',
+        specPattern: ['monkeys/**/*.js', 'e2e/**/*.js'],
     },
 };

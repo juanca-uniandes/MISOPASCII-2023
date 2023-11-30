@@ -1,6 +1,6 @@
 import './login_with_correct_credentials.cy';
 require('@cypress/xpath');
-const {USER_PROFILE_DROPDOWN, LOGOUT_LINK, DASHBOARD_URL} = require('./globals/constants');
+const {USER_PROFILE_DROPDOWN, LOGOUT_LINK, DASHBOARD_URL} = require('../e2e_back/globals/constants');
 
 
 

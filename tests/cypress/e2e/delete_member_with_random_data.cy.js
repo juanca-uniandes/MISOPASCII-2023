@@ -1,9 +1,9 @@
 import {faker} from '@faker-js/faker';
-import '../login_with_correct_credentials.cy';
+import './login_with_correct_credentials.cy';
 require('@cypress/xpath');
-describe('Como usuario quiero crear un mimebro con informacion aleatoria correcta', () => {
+describe('Como usuario quiero borrar un miembro.', () => {
 
-    it('Crear miembro con informacion aleatoria correcta', () => {
+    it('Eliminar miembro', () => {
         cy.hacerLoginCorrecto();
         const fakeEmail = faker.internet.email();
         const fakeName = faker.name.firstName();
@@ -18,10 +18,16 @@ describe('Como usuario quiero crear un mimebro con informacion aleatoria correct
         cy.xpath('/html/body/div[2]/div/main/section/div[1]/header/section/button').click();
         cy.wait(1000);
         cy.screenshot(`crear_miembro_con_informacion_aleatoria_correcta`);
-        cy.xpath('/html/body/div[2]/div/main/section/div[1]/header/div/h2').invoke('text').then((actualText) => {
-            const cleanedActualText = actualText.replace(/\s+/g, ' ').trim();
-            expect(cleanedActualText).to.equal(fakeName);
-        });
+        cy.xpath('/html/body/div[2]/div/main/section/div[1]/header/section/span/button').click();
         cy.wait(1000);
+        cy.xpath('/html/body/div[2]/div/main/section/div[1]/header/section/span/ul/li[2]/button').click();
+        cy.wait(1000);
+        cy.get('.epm-modal.fullscreen-modal-action.fullscreen-modal-wide')
+            .should('be.visible')
+            .within(() => {
+                cy.xpath('/html/body/div[5]/div/div/div[2]/button[2]')
+                    .click();
+            });
+        cy.get('.gh-canvas-title').should('contain', 'Members');
     });
 });

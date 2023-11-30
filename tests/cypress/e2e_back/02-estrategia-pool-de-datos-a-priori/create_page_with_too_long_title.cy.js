@@ -1,4 +1,4 @@
-import '../login_with_correct_credentials.cy';
+import '../../e2e/login_with_correct_credentials.cy';
 require('@cypress/xpath');
 import {
     CREATE_NEW_PAGE_OPTION,

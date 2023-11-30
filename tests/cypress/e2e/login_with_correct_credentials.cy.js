@@ -1,6 +1,6 @@
 import { Params } from '../params';
 const { LOGIN_URL, EMAIL, PASSWORD } = Params;
-const {LOGIN_INPUT_EMAIL, LOGIN_INPUT_PASSWORD, LOGIN_SIGNIN_BUTTON, ADMIN_DASHBOARD_TITLE} = require('./globals/constants');
+const {LOGIN_INPUT_EMAIL, LOGIN_INPUT_PASSWORD, LOGIN_SIGNIN_BUTTON, ADMIN_DASHBOARD_TITLE} = require('../e2e_back/globals/constants');
 const { faker } = require('@faker-js/faker');
 
 Cypress.Commands.add('hacerLoginCorrecto', () => {
