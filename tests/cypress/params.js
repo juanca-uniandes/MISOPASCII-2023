@@ -1,0 +1,7 @@
+export const Params = {
+    MAIN_URL: "http://localhost:2368/",
+    LOGIN_URL: "http://localhost:2368/ghost/#/signin",
+    EMAIL: "test@test.com",
+    PASSWORD: "mytest2023",
+    PROJECT_NAME: "test",
+};

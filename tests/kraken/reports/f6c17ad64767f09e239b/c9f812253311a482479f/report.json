@@ -1,0 +1,389 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-page;user-can-create-page-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User can create page successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 542000000,
+              "error_message": "FetchError: Failed to fetch browser webSocket URL from http://localhost:59337/json/version: request to http://localhost:59337/json/version failed, reason: connect ECONNREFUSED ::1:59337\n    at ClientRequest.<anonymous> (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/node-fetch/lib/index.js:1491:11)\n    at ClientRequest.emit (node:events:517:28)\n    at ClientRequest.emit (node:domain:489:12)\n    at Socket.socketErrorListener (node:_http_client:501:9)\n    at Socket.emit (node:events:517:28)\n    at Socket.emit (node:domain:489:12)\n    at emitErrorNT (node:internal/streams/destroy:151:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to page \"<LOGIN_URL>\"",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/web.js:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for 5 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter a correct email \"<EMAIL>\"",
+            "match": {
+              "location": "features/web/step_definitions/step.js:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I enter a correct password \"<PASSWORD>\"",
+            "match": {
+              "location": "features/web/step_definitions/step.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click on the signin button",
+            "match": {
+              "location": "features/web/step_definitions/step.js:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I wait for 5 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I can see dashboard admin",
+            "match": {
+              "location": "features/web/step_definitions/step.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select the \"Pages\" section",
+            "match": {
+              "location": "features/web/step_definitions/step.js:120"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I select the \"Create New Page\" option",
+            "match": {
+              "location": "features/web/step_definitions/step.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I type the page title \"Sample Page\"",
+            "match": {
+              "location": "features/web/step_definitions/step.js:130"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click on the body text of page",
+            "match": {
+              "location": "features/web/step_definitions/step.js:135"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click on the \"Publish Page\" option",
+            "match": {
+              "location": "features/web/step_definitions/step.js:140"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click on \"Finish Review Page\"",
+            "match": {
+              "location": "features/web/step_definitions/step.js:145"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I click on the \"Publish Page Now\" button",
+            "match": {
+              "location": "features/web/step_definitions/step.js:150"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I wait for 5 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I confirm that the page was created",
+            "match": {
+              "location": "features/web/step_definitions/step.js:155"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules/kraken-node/lib/steps/both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'deleteSession')\n    at WebClient.<anonymous> (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/WebClient.js:109:59)\n    at step (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/WebClient.js:59:23)\n    at Object.next (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/WebClient.js:40:53)\n    at /Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/WebClient.js:34:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/WebClient.js:30:12)\n    at WebClient.stop (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/WebClient.js:104:16)\n    at WebClient.<anonymous> (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/Client.js:109:51)\n    at step (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/Client.js:67:23)\n    at Object.next (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/Client.js:48:53)\n    at fulfilled (/Users/juan/Herd/MISOPASCII-2023/e2e/kraken/node_modules/kraken-node/lib/clients/Client.js:39:58)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user1",
+            "line": 3
+          },
+          {
+            "name": "@web",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Create Page",
+    "tags": [],
+    "uri": "features/create_page.feature"
+  }
+]
