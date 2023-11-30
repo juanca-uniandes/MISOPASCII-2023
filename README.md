@@ -1,12 +1,9 @@
 ## Generalidades 
 1. Las funcionalidades y escenarios de prueba fueron realizados en `macOS Sonoma 14.0`.
-2. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co], por ende, he escogido 30 pruebas.
-3. Solo se uso CYPRESS y los test se encuentran en ```e2e/cypress/e2e```.
-4. Los test de estrategia aleatoria están ```e2e/cypress/e2e/01-estrategia-escenario-aleatorio```
-5. Los test de estrategia estrategia pool de datos a priori estan ```e2e/cypress/e2e/02-estrategia-pool-de-datos-a-priori```
-6. Los test de estrategia de pool de datos pseudo aleatorio estan ```e2e/cypress/e2e/03-estrategia-pool-de-datos-pseudo-aleatorio```
-7. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
-8. Para el registro de incidencias revisar los issues que inician con SEMANA VI - Solo pude localizar 7 incidencias. debido a que trabaje solo con 30 pruebas.
+2. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co].
+3. Solo se uso CYPRESS como herramienta para realizar las pruebas.
+4. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
+5. Para el registro de incidencias revisar los issues que inician con SEMANA VI - Solo pude localizar 7 incidencias. debido a que trabaje solo con 30 pruebas.
 
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
@@ -30,23 +27,10 @@
 
 ## Despliegue y ejecución de pruebas con Cypress
 1. Usando `nvm` vamos a instalar la versión de `node 20` por lo tanto debemos hacer `nvm install 20` y ` nvm use 20` esto instalará y usará la versión 20 de node en nuestro sistema y adicionará el path automáticamente a las variables de entorno. Si haces `node --version` verás la versión 20.x que se ha instalado.
-2. Desde la raíz del proyecto realizamos `cd e2e/cypress`
+2. Desde la raíz del proyecto realizamos `cd tests/cypress`
 3. Ejecutamos `npm install`
 4. Modificamos el siguiente archivo `nano e2e/cypress/params.js` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
 5. Y finalmente ejecutamos los test con `npm run cypress:run`
 6. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/1df9f142-1aed-4408-a6fa-2750ecb0bcb3)
-
-## Estrategias de pruebas
-### Estrategia escenario aleatorio.
-Para la generación aleatoria de datos, se utilizó la herramienta Faker, importando la biblioteca en cada uno de los archivos que implementan los casos de prueba. Según las entradas del escenario de prueba a validar, se emplearon los métodos proporcionados por la biblioteca Faker, tales como word, words, lorem, internet, etc.
-
-### Estrategia pool de datos a-priori
-Para la generación previa de datos, se utilizó la herramienta Mockaroo estableciendo un template de data general llamado MOCK_DATA.json con 1000 registros y este fue ubicado dentro del proyecto cypress. En cada caso de pruebas implementado, se importó el mencionado archivo haciedo uso aletario de los registros allí encontrados.
-
-### Estrategia pool de datos (pseudo) aleatorio dinámico
-Para la generación pseudoaleatoria de datos, se empleó el generador de datos Mockaroo a través de una interfaz tipo API. En este proceso, se creó una cuenta en Mockaroo y se diseñó un esquema denominado 'Data'. Este esquema está definido por un objeto que incluye las propiedades 'first_name', 'second_name', 'short_text', 'long_text', y sus valores son generados de forma automática.
-
-Esta URL se utiliza en cada caso de prueba cypres, al obtener el response del api su body lo guardo en un objeto y luego lo uso para llenar los campos de la interfaz.
-
 
 
