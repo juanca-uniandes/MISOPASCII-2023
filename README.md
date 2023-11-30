@@ -29,7 +29,7 @@
 3. Puedes verificar si las variables de entorno ADB han sido añadidas, de lo contrario deberás adicionarlas al .zshrc con los siguientes pasos: `nano ~/.zshrc` y adicionar `export PATH=$PATH:/Users/YOUR_USER_NAME/Library/Android/sdk/platform-tools`. Una vez adicionado este path deberías ser capaz de ejecutar `adb --versio`. El resultado en mi caso es el siguiente: `Version 34.0.5-10900879
    Installed as /Users/juan/Library/Android/sdk/platform-tools/adb
    Running on Darwin 23.0.0 (arm64)`
-4. Estando en la raíz del proyecto vamos a la siguiente carpeta `cd e2e/kraken`
+4. Estando en la raíz del proyecto vamos a la siguiente carpeta `cd tests/kraken`
 5. Ejecutamos `npm install` esto debería instalar las dependencias necesarias para ejecutar los test
 6. Ahora sí modificamos el `properties.json` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
 7. Finalmente ejecutamos el comando `./node_modules/kraken-node/bin/kraken-node run` y los test empezarán a ejecutarse.
