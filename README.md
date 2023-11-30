@@ -29,7 +29,7 @@
 1. Usando `nvm` vamos a instalar la versión de `node 20` por lo tanto debemos hacer `nvm install 20` y ` nvm use 20` esto instalará y usará la versión 20 de node en nuestro sistema y adicionará el path automáticamente a las variables de entorno. Si haces `node --version` verás la versión 20.x que se ha instalado.
 2. Desde la raíz del proyecto realizamos `cd tests/cypress`
 3. Ejecutamos `npm install`
-4. Modificamos el siguiente archivo `nano e2e/cypress/params.js` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email y password serán los que creaste en el paso 7 del despliegue de Ghost
+4. Desde la raiz, modificamos el siguiente archivo `nano tests/cypress/params.js` y en las variables `MAIN_URL, LOGIN_URL, EMAIL, PASSWORD, PROJECT_NAME` reemplázalas por la URL que se generó en el paso 6 del despliegue de Ghost y el email, password, y nombre del proyecto serán los que creaste en el paso 7 del despliegue de Ghost
 5. Y finalmente ejecutamos los test con `npm run cypress:run`
 6. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/1df9f142-1aed-4408-a6fa-2750ecb0bcb3)
 
