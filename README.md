@@ -3,8 +3,7 @@
 2. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co].
 3. Solo se uso CYPRESS como herramienta para realizar las pruebas.
 4. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
-5. Para el registro de incidencias revisar los issues que inician con SEMANA VI - Solo pude localizar 7 incidencias. debido a que trabaje solo con 30 pruebas.
-
+   
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
 2. Este comando te clonará la última versión estable de NVM en tu directorio `~/.nvm`, luego intentará escribir en tu archivo `~/.zshrc` o `~/.bashrc` el código de abajo. Esto para que NVM se cargue y funcione correctamente al iniciar sesión en tu computadora.
