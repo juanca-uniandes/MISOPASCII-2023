@@ -5,7 +5,7 @@
 4. Los test E2E estan en ```tests/cypress/e2e```
 5. Los test de reconocimiento estan en ```tests/cypress/monkeys```
 6. Los test manuales estan en [Ver documento](https://uniandes-my.sharepoint.com/:x:/g/personal/j_vallejosg_uniandes_edu_co/ETzl8ema-zlMjspZMEOIZkkB7ek9fSfUI5xbqmL8p0TNsA?e=62jClT)
-7. Los test de esenarios de validacion estan en ```tests/kraken/features```
+7. Los test de escenarios de validacion estan en ```tests/kraken/features```
 8. En la wiki [Entrega Semana VIII](https://github.com/juanca-uniandes/MISOPASCII-2023/wiki) podra encontrar los documentos relacionados con:
 - Estrategia de pruebas
 - Presupuesto
