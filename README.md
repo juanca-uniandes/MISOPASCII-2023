@@ -2,7 +2,11 @@
 1. Las funcionalidades y escenarios de prueba fueron realizados en `macOS Sonoma 14.0`.
 2. Este trabajo es presentado de manera individual por mi persona Juan Camilo Vallejos [j.vallejosg@uniandes.edu.co].
 3. Solo se uso CYPRESS como herramienta para realizar las pruebas.
-4. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
+4. Los test E2E estan en ```tests/cypress/e2e```
+5. Los test de reconocimiento estan en ```tests/cypress/monkeys```
+6. Los test manuales estan en [Ver documento](https://uniandes-my.sharepoint.com/:x:/g/personal/j_vallejosg_uniandes_edu_co/ETzl8ema-zlMjspZMEOIZkkB7ek9fSfUI5xbqmL8p0TNsA?e=62jClT)
+7. Los test de esenarios de validacion estan en ```tests/kraken/features```
+8. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
    
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
