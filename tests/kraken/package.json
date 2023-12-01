@@ -9,7 +9,7 @@
   "author": "Juan Camilo Vallejos Guerrero",
   "license": "ISC",
   "dependencies": {
-    "@cucumber/cucumber": "^7.2.1",
+    "@cucumber/cucumber": "7.2.1",
     "chai": "^4.3.10",
     "kraken-node": "^1.0.24"
   }

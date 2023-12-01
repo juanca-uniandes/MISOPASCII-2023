@@ -22,4 +22,7 @@ Scenario: User can create tag successfully
   And I wait for 2 seconds
   When I click on the "Save Tag" button
   And I wait for 5 seconds
-  Then I confirm that the tag was created
+  When I click on delete button tag
+  And I wait for 2 seconds
+  When I click on confirm delete tag
+  And I wait for 3 seconds

@@ -190,6 +190,22 @@ Then('I confirm that the tag was created', async function () {
   expect(await confirmationButton.isDisplayed()).to.be.true;
 });
 
+When('I click on delete button tag', async function () {
+  let element = await this.driver.$('/html/body/div[2]/div/main/section/div/button');
+  return await element.click();
+});
+
+When('I click on confirm delete tag', async function () {
+  let element = await this.driver.$('/html/body/div[5]/div/div/div[2]/button[2]');
+  return await element.click();
+});
+
+Then('I come back to the tag list', async function () {
+    let element = await this.driver.$('/html/body/div[2]/div/main/section/div/header/h2');
+    let actualText = await element.getText();
+    expect(actualText.trim()).to.include('Tags');
+});
+
 
 
 
