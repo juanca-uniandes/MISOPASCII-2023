@@ -6,7 +6,13 @@
 5. Los test de reconocimiento estan en ```tests/cypress/monkeys```
 6. Los test manuales estan en [Ver documento](https://uniandes-my.sharepoint.com/:x:/g/personal/j_vallejosg_uniandes_edu_co/ETzl8ema-zlMjspZMEOIZkkB7ek9fSfUI5xbqmL8p0TNsA?e=62jClT)
 7. Los test de esenarios de validacion estan en ```tests/kraken/features```
-8. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
+8. En la wiki podra encontrar los documentos relacionados con:
+- Estrategia de pruebas
+- Presupuesto
+- Funcionalidades y Escenarios de Prueba Seleccionados
+- Inventario de pruebas Manuales
+- Pros y contras herramientas usadas para las pruebas
+10. ATENCION ⚠️⚠️⚠️: Ghost tiene un limites de peticiones que se le pueden realizar al login, si se supera dicho limite te bloqueara por una hora. Para evadir este bloqueo podemos cargar la base de datos ```ghost/content/data/ghost-local.db``` y eliminar todos los registros de la tabla ```brute```.
    
 ## Instalación de nvm para trabajar con diferentes versiones de node
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
