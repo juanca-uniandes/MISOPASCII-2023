@@ -33,7 +33,7 @@
 8. Ingresa en la URL y deberías ver un formulario para nombrar a tu proyecto local de Ghost, y crear un usuario con correo y contraseña para poder acceder al dashboard. Ten presente este usuario y contraseña porque lo usaremos en pasos posteriores. `[YOUR_EMAIL, YOUR_PASSWORD]`
 9. Ten presente la URL generada en el paso 6 porque la vamos a usar en pasos posteriores.
 
-## Despliegue y ejecución de pruebas con Kraken
+## Despliegue y ejecución de pruebas con Kraken (Escenarios de validacion)
 1. Usando `nvm` vamos a instalar la versión de `node 20` por lo tanto debemos hacer `nvm install 20` y ` nvm use 20` esto instalará y usará la versión 20 de node en nuestro sistema y adicionará el path automáticamente a las variables de entorno. Si haces `node --version` verás la versión 20.x que se ha instalado.
 2. Instalar Android Studio Giraffe [https://developer.android.com/studio](https://developer.android.com/studio)
 3. Puedes verificar si las variables de entorno ADB han sido añadidas, de lo contrario deberás adicionarlas al .zshrc con los siguientes pasos: `nano ~/.zshrc` y adicionar `export PATH=$PATH:/Users/YOUR_USER_NAME/Library/Android/sdk/platform-tools`. Una vez adicionado este path deberías ser capaz de ejecutar `adb --versio`. El resultado en mi caso es el siguiente: `Version 34.0.5-10900879
@@ -45,7 +45,7 @@
 7. Finalmente ejecutamos el comando `./node_modules/kraken-node/bin/kraken-node run` y los test empezarán a ejecutarse.
 8. ![image](https://github.com/juanca-uniandes/MISOPASCII-2023/assets/142238841/9c146531-5635-4656-9b17-0fad3a96ed76)
 
-## Despliegue y ejecución de pruebas con Cypress
+## Despliegue y ejecución de pruebas con Cypress (Monkeys y E2E corren al mismo tiempo)
 1. Usando `nvm` vamos a instalar la versión de `node 20` por lo tanto debemos hacer `nvm install 20` y ` nvm use 20` esto instalará y usará la versión 20 de node en nuestro sistema y adicionará el path automáticamente a las variables de entorno. Si haces `node --version` verás la versión 20.x que se ha instalado.
 2. Desde la raíz del proyecto realizamos `cd tests/cypress`
 3. Ejecutamos `npm install`
